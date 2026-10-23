@@ -32,7 +32,35 @@
             margin: 0 8px;
         }
 
-        p {
+        .profile {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            margin: 10px 8px;
+        }
+
+        .profile img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #D5B8F5;
+        }
+
+        .profile .name {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 11px;
+            margin: 6px 0 0;
+            padding: 0;
+            border: none;
+            background: transparent;
+            color: #824DAB;
+            line-height: 1.3;
+            white-space: normal;
+        }
+
+        .description {
             font-family: 'Fredoka', sans-serif;
             font-size: 19px;
             line-height: 1.6;
@@ -49,11 +77,18 @@
 
     <h1>
         <span class="ribbon">🎀</span>
+
         Welcome to My Personal Webpage!
+
+        <span class="profile">
+            <img src="my-picture.jpg" alt="My Picture">
+            <span class="name">By Alexa Daniella D. Cagalawan</span>
+        </span>
+
         <span class="ribbon">🎀</span>
     </h1>
 
-    <p>
+    <p class="description">
         Hello and welcome to my webpage! I created this website
         as part of my ICT performance task to apply what I have
         learned about HTML and CSS. Through this activity, I was
@@ -61,7 +96,7 @@
         elements work together to build a webpage.
     </p>
 
-    <p>
+    <p class="description">
         For my design, I chose an aesthetic theme with pastel
         purple colors, cute fonts, and simple layouts. I enjoyed
         customizing the appearance of my webpage and exploring
